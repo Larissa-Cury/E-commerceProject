@@ -10,50 +10,56 @@ This project analysis a 2-year interval data of a fictionous e-commerce company.
 
 In total, I generated the following datasets using R programming language (in RStudio) to be latter evaluated in SQL and Power Bi. 
 
-### Dimension Tables
+<details>
+  <summary>Dimension Tables</summary>
+  
+  1. **dim_customers**
+     - `customer_id`: Unique identifier for each customer
+     - `first_name`: Customer's first name
+     - `last_name`: Customer's last name
+     - `email`: Customer's email address
+     - `phone`: Customer's phone number
+     - `registration_date`: Date of customer registration
+     - `age`: Age of the customer
+     - `marital_status`: Customer's marital status
+     - `number_of_pets`: Number of pets owned
 
-1. **dim_customers**
-   - `customer_id`: Unique identifier for each customer
-   - `first_name`: Customer's first name
-   - `last_name`: Customer's last name
-   - `email`: Customer's email address
-   - `phone`: Customer's phone number
-   - `registration_date`: Date when the customer registered
-   - `age`: Age of the customer
-   - `marital_status`: Marital status of the customer
-   - `number_of_pets`: Number of pets owned by the customer
+  2. **dim_products**
+     - `product_id`: Unique product identifier
+     - `product_name`: Name of the product
+     - `category_id`: Product category identifier
+     - `category`: Name of the category
+     - `pet_type`: Type of pet the product is for
+     - `price`: Price of the product
+     - `stock_quantity`: Available stock quantity
 
-2. **dim_products**
-   - `product_id`: Unique identifier for each product
-   - `product_name`: Name of the product
-   - `category_id`: Identifier for the product category
-   - `category`: Name of the product category
-   - `pet_type`: Type of pet the product is for (e.g., dog, cat)
-   - `price`: Price of the product
-   - `stock_quantity`: Quantity of the product available in stock
+  3. **dim_categories**
+     - `category_id`: Unique category identifier
+     - `category_name`: Name of the category
+     - `category_description`: Description of the category
 
-3. **dim_categories**
-   - `category_id`: Unique identifier for each product category
-   - `category_name`: Name of the product category
-   - `category_description`: Description of the product category
+  4. **dim_distributors**
+     - `distributor_id`: Unique distributor identifier
+     - `distributor_region`: Distributor's geographical region
+     - `distributor_state`: State of the distributor
+     - `latitude`: Latitude of distributor's location
+     - `longitude`: Longitude of distributor's location
 
-4. **dim_distributors**
-   - `distributor_id`: Unique identifier for each distributor
-   - `distributor_region`: Geographical region of the distributor
-   - `distributor_state`: State where the distributor is located
-   - `latitude`: Latitude of the distributor's location
-   - `longitude`: Longitude of the distributor's location
+</details>
 
-### Fact Table
+<details>
+  <summary>Fact Table</summary>
+  
+  5. **fact_sales**
+     - `order_id`: Unique order identifier
+     - `product_id`: Purchased product identifier
+     - `customer_id`: Customer identifier
+     - `distributor_id`: Distributor identifier
+     - `sale_date`: Date of the sale
+     - `quantity`: Quantity purchased
+     - `total_amount`: Total purchase amount
+     - `expected_delivery_date`: Estimated delivery date
+     - `actual_delivery_date`: Actual delivery date
 
-5. **fact_sales**
-   - `order_id`: Unique identifier for each order
-   - `product_id`: Identifier of the purchased product
-   - `customer_id`: Identifier of the customer making the purchase
-   - `distributor_id`: Identifier of the distributor fulfilling the order
-   - `sale_date`: Date of the sale
-   - `quantity`: Quantity of products purchased
-   - `total_amount`: Total amount for the purchase
-   - `expected_delivery_date`: Estimated delivery date
-   - `actual_delivery_date`: Actual delivery date
+</details>
 
