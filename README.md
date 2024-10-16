@@ -5,6 +5,7 @@ This project analysis a 2-year interval data of a fictionous e-commerce company.
 <br><br>
 <br><br>
 <br><br>
+<br><br>
 
 ## Generating the data in R 
 
@@ -50,7 +51,7 @@ In total, I generated the following datasets using R programming language (in RS
 <details>
   <summary>Fact Table</summary>
   
-  5. **fact_sales**
+  1. **fact_sales**
      - `order_id`: Unique order identifier
      - `product_id`: Purchased product identifier
      - `customer_id`: Customer identifier
