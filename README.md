@@ -5,7 +5,6 @@ This project analysis a 4-year interval data of a fictionous e-commerce company 
 The tools used in this project were R, SQL and Power Bi.
 
 <br><br>
-<br><br>
 
 ## Generating the data in R 
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1GYJsIZc6gqhxgwJAI6__pmzr1_loxYCZ">
@@ -65,6 +64,8 @@ In total, I generated the following datasets using R programming language (in RS
 
 </details>
 
+<br><br>
+<br><br>
 
 ## Creating a database in SQL
 
@@ -72,12 +73,16 @@ In total, I generated the following datasets using R programming language (in RS
 
 ### Step 2: Create each table of the database corresponding the datafiles of the .CSV files.
 
+<br>
+Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
+
+<br><br>
+
 ### Step 3: BULK INSERT the .CSV files into the existing tables
 
 ## Creating the data model in SQL
 
 In this step, I estabilished the relantionsips between the tables' PRIMARY KEYs to their corresponding FOREIGN KEYs in other tables
-
 
 
 
