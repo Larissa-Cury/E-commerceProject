@@ -3,12 +3,14 @@
 This project analysis a 2-year interval data of a fictionous e-commerce company. The tools used in this project were R, SQL and Power Bi.
 
 <br><br>
+<br><br>
+<br><br>
 
 ## Generating the data in R 
 
 In total, I generated the following datasets using R programming language (in RStudio) to be latter evaluated in SQL and Power Bi. 
 
-# Dimension Tables
+### Dimension Tables
 
 1. **dim_customers**
    - `customer_id`: Unique identifier for each customer
@@ -42,7 +44,7 @@ In total, I generated the following datasets using R programming language (in RS
    - `latitude`: Latitude of the distributor's location
    - `longitude`: Longitude of the distributor's location
 
-# Fact Table
+### Fact Table
 
 5. **fact_sales**
    - `order_id`: Unique identifier for each order
