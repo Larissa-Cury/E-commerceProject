@@ -2,7 +2,7 @@
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1dP7f8_ORmpAoVGIVIE5zeCCNPmubNNJJ">
 This project analysis a 2-year interval data of a fictionous e-commerce company. The tools used in this project were R, SQL and Power Bi.
 
-<br> 
+<br><br>
 
 ## Generating the data in R 
 
