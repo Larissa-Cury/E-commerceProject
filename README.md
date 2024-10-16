@@ -6,8 +6,6 @@ The tools used in this project were R, SQL and Power Bi.
 
 <br><br>
 <br><br>
-<br><br>
-<br><br>
 
 ## Generating the data in R 
 
