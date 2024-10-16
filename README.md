@@ -1,5 +1,5 @@
 ## E-commerce Sales Project 
-<img align="right" width="500" height="320" src="https://drive.google.com/file/d/1dP7f8_ORmpAoVGIVIE5zeCCNPmubNNJJ/view?usp=sharing">
+<img align="right" width="500" height="320" src="[https://drive.google.com/file/d/1dP7f8_ORmpAoVGIVIE5zeCCNPmubNNJJ/view?usp=sharing](https://drive.google.com/drive/u/0/folders/1WxlMhli5iMUWAvfe8c11LKwN14zcFQtq)">
 This project analysis a 2-year interval data of a fictionous e-commerce company. The tools used in this project were R, SQL and Power Bi.
 
 KPIs assessed in the analysis: 
