@@ -1,7 +1,7 @@
 ## E-commerce Sales Project 
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1dP7f8_ORmpAoVGIVIE5zeCCNPmubNNJJ">
 This project analysis a 4-year interval data of a fictionous e-commerce company especilized in the Pet Market. The company mostly attends adults (20-60y) who own either a dog or a cat. The pet shop especializes in 5 different product categories (food, snacks, medicine, toys and hygine), for which the company offers 10 different products. The pet shop has delivery deals with 5 distribution centers in the city of Rio de Janeiro, in 5 different regions of the city (South, North, West, "Baixada Fluminense" and Downtown).
-
+<br>
 The tools used in this project were R, SQL and Power Bi.
 
 <br><br>
@@ -22,6 +22,7 @@ In total, I generated the following datasets using R programming language (in RS
      - `phone`: Customer's phone number
      - `registration_date`: Date of customer registration
      - `age`: Age of the customer
+     -  `gender`: Gender of the customer
      - `marital_status`: Customer's marital status
      - `number_of_pets`: Number of pets owned
 
@@ -63,4 +64,20 @@ In total, I generated the following datasets using R programming language (in RS
      - `actual_delivery_date`: Actual delivery date
 
 </details>
+
+
+## Creating a database in SQL
+
+### Step 1: Create a new database 
+
+### Step 2: Create each table of the database corresponding the datafiles of the .CSV files.
+
+### Step 3: BULK INSERT the .CSV files into the existing tables
+
+## Creating the data model in SQL
+
+In this step, I estabilished the relantionsips between the tables' PRIMARY KEYs to their corresponding FOREIGN KEYs in other tables
+
+
+
 
