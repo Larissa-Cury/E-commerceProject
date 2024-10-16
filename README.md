@@ -10,7 +10,7 @@ The tools used in this project were R, SQL and Power Bi.
 ## Generating the data in R 
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1GYJsIZc6gqhxgwJAI6__pmzr1_loxYCZ">
 In total, I generated the following datasets using R programming language (in RStudio) to be latter evaluated in SQL and Power Bi. 
-
+<br> <br>
 <details>
   <summary>Dimension Tables</summary>
   
