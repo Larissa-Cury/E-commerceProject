@@ -104,7 +104,7 @@ Next, I used the `ALTER TABLE` statement to establish the relationships between 
 ---
 
 ### Step 3: Display the Final Data Model
-<img align="right" width="500" height="320" src="[https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-">
+<img align="right" width="500" height="320" src="https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-">
 
 The final diagram visually represents the completed data model, showing the relationships between the tables according to their respective PK and FK.
 
