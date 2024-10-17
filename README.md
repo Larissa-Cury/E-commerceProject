@@ -88,11 +88,11 @@ With the tables created, I used INSERT BULK to insert the corresponding CSV file
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=12Uq57n-5zp_Eo0GuFGSrNasFWk6jq7vk">
 
 I created a diagram to display the data model via creating a new DB Diagram. The picture displays it. 
-
+<br><br>
 ### Step 2: Estabilish the relantionships among the PK and FK of the tables. 
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1AEKaePMfL5AqZIM__1T2GCCOVKZd6zQN">
 Then, I used ALTER TABLE to establish the relationships between each PK and its corresponding foreign keys (FK) with the SQL code represented in the picture.
-
+<br><br>
 ### Step 3: Display the final data model 
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-">
 The diagram visually represents the final data model I created by relationating the tables according to their respective PK and FKs.
