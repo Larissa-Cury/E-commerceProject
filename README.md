@@ -86,7 +86,7 @@ With the tables created, I used INSERT BULK to insert the corresponding CSV file
 
 ### Step 1: Create the Empty Data Model (Without Relationships)
 
-<img align="right" width="500" height="320" src="https://drive.google.com/uc?id=12Uq57n-5zp_Eo0GuFGSrNasFWk6jq7vk">
+<img align="right" src="https://drive.google.com/uc?id=12Uq57n-5zp_Eo0GuFGSrNasFWk6jq7vk" style="height:320px; width:auto;">
 
 I created a diagram to display the initial data model by setting up a new DB Diagram. The image above shows the data model without any established relationships.
 
@@ -96,7 +96,7 @@ I created a diagram to display the initial data model by setting up a new DB Dia
 
 ### Step 2: Establish the Relationships Among the Primary Keys (PK) and Foreign Keys (FK)
 
-<img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1NPc9k9RbpJe9gcHcbza6zPkMgbZpIT69">
+<img align="right" src="https://drive.google.com/uc?id=1NPc9k9RbpJe9gcHcbza6zPkMgbZpIT69" style="height:320px; width:auto;">
 
 Next, I used the `ALTER TABLE` statement to establish the relationships between each PK and its corresponding FK, as represented in the image above.
 
@@ -106,9 +106,11 @@ Next, I used the `ALTER TABLE` statement to establish the relationships between 
 
 ### Step 3: Display the Final Data Model
 
-<img align="right" width="500" height="320" src="https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-">
+<img align="right" src="https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-" style="height:320px; width:auto;">
 
 The final diagram visually represents the completed data model, showing the relationships between the tables according to their respective PK and FK.
+
+
 
 
 
