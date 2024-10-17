@@ -67,11 +67,30 @@ In total, I generated the following datasets using R programming language (in RS
 <br><br>
 <br><br>
 
-## Creating a database in SQL
+## Importing .CSV files and creating a DB in SQL
 
-### Step 1: Create a new database 
+### Step 1: Create a new database  
+
+This phase encompasses creating a database from scratch by importing multiple CSV files into SQL Server. To do it, I first created a new database called "MannedWolfPetCenterDB" using CREATE DATABASE;
 
 ### Step 2: Create each table of the database corresponding the datafiles of the .CSV files.
+
+I created 5 tables using CREATE TABLE. For each, I specified the PRIMARY KEY:
+
+### Step 3: Insert the .CSV files into the MannedWolfPetCenterDB's tables
+
+With the tables created, I used INSERT BULK to insert the corresponding CSV files from my computer into the new tables
+
+## Creating a data model in SQL
+
+### Step 1: Create the empty data model, still without the relantionships
+
+I created a diagram to display the data model via creating a new DB Diagram. The picture displays it. 
+
+### Step 2: Estabilishing the relantionships among the PK and FK of the tables. 
+
+Now I'll be using ALTER TABLE to establish the relationships between each PK and its corresponding foreign keys (FK).
+
 
 <br>
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
