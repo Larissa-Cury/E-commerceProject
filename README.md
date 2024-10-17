@@ -72,15 +72,15 @@ In total, I generated the following datasets using R programming language (in RS
 
 ### Step 1: Create a new database  
 
-This phase encompasses creating a database from scratch by importing multiple CSV files into SQL Server. To do it, I first created a new database called "MannedWolfPetCenterDB" using CREATE DATABASE;
+This phase encompasses creating a database from scratch by importing multiple CSV files into SQL Server. To do it, I first created a new database called "MannedWolfPetCenterDB" using `CREATE DATABASE`;
 
 ### Step 2: Create each table of the database corresponding the datafiles of the .CSV files.
 
-I created 5 tables using CREATE TABLE. For each, I specified the PRIMARY KEY:
+I created 5 tables using `CREATE TABLE`. For each, I specified the PRIMARY KEY:
 
 ### Step 3: Insert the .CSV files into the MannedWolfPetCenterDB's tables
 
-With the tables created, I used INSERT BULK to insert the corresponding CSV files from my computer into the new tables
+With the tables created, I used `INSERT BULK` to insert the corresponding .CSV files from my computer into the new tables
 
 ## Creating a Data Model in SQL
 
