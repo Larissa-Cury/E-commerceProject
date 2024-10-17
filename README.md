@@ -90,6 +90,7 @@ With the tables created, I used INSERT BULK to insert the corresponding CSV file
 I created a diagram to display the initial data model by setting up a new DB Diagram. The image above shows the data model without any established relationships.
 
 <br><br>
+<br><br>
 
 ---
 
@@ -100,7 +101,7 @@ I created a diagram to display the initial data model by setting up a new DB Dia
 Next, I used the `ALTER TABLE` statement to establish the relationships between each PK and its corresponding FK, as represented in the image above.
 
 <br><br>
-
+<br><br>
 ---
 
 ### Step 3: Display the Final Data Model
