@@ -85,7 +85,7 @@ With the tables created, I used INSERT BULK to insert the corresponding CSV file
 ## Creating a Data Model in SQL
 
 ### Step 1: Create the Empty Data Model (Without Relationships)
-<img align="right" width="500" height="450" src="drive.google.com/uc?id=12Uq57n-5zp_Eo0GuFGSrNasFWk6jq7vk">
+<img align="right" width="500" height="320" src="https://drive.google.com/uc?id=12Uq57n-5zp_Eo0GuFGSrNasFWk6jq7vk">
 
 I created a diagram to display the initial data model by setting up a new DB Diagram. The image above shows the data model without any established relationships.
 
@@ -95,7 +95,7 @@ I created a diagram to display the initial data model by setting up a new DB Dia
 
 ### Step 2: Establish the Relationships Among the Primary Keys (PK) and Foreign Keys (FK)
 
-<img align="right" width="500" height="450" src="drive.google.com/uc?id=1NPc9k9RbpJe9gcHcbza6zPkMgbZpIT69">
+<img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1NPc9k9RbpJe9gcHcbza6zPkMgbZpIT69">
 
 Next, I used the `ALTER TABLE` statement to establish the relationships between each PK and its corresponding FK, as represented in the image above.
 
