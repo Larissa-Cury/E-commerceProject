@@ -68,7 +68,7 @@ In total, I generated the following datasets using R programming language (in RS
 <br><br>
 
 ## Importing .CSV files and creating a DB in SQL
-<img align="right" width="500" height="420" src="https://drive.google.com/uc?id=1HHn4R9Ix-q_x6y1szUHl6xPp7qEb0WKt">
+<img align="right" width="500" height="450" src="https://drive.google.com/uc?id=1HHn4R9Ix-q_x6y1szUHl6xPp7qEb0WKt">
 
 ### Step 1: Create a new database  
 
@@ -85,6 +85,7 @@ With the tables created, I used INSERT BULK to insert the corresponding CSV file
 ## Creating a data model in SQL
 
 ### Step 1: Create the empty data model, still without the relantionships
+<img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1sltHtVYQTPTgY1ZIiTwYgALZocEhbzoZ">
 
 I created a diagram to display the data model via creating a new DB Diagram. The picture displays it. 
 
