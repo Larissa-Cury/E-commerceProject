@@ -68,6 +68,7 @@ In total, I generated the following datasets using R programming language (in RS
 <br><br>
 
 ## Importing .CSV files and creating a DB in SQL
+<img align="right" width="500" height="320" src="https://drive.google.com/uc?id=12kAg6gIJ8HjSyqPd_Sk01FhnaXzc7TVt">
 
 ### Step 1: Create a new database  
 
