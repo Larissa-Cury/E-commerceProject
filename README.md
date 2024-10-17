@@ -85,8 +85,8 @@ With the tables created, I used INSERT BULK to insert the corresponding CSV file
 ## Creating a Data Model in SQL
 
 ### Step 1: Create the Empty Data Model (Without Relationships)
-I created a diagram to display the initial data model by setting up a new DB Diagram. The image above shows the data model without any established relationships.
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=12Uq57n-5zp_Eo0GuFGSrNasFWk6jq7vk">
+I created a diagram to display the initial data model by setting up a new DB Diagram. The image above shows the data model without any established relationships.
 
 <br><br>
 <br><br>
@@ -94,16 +94,18 @@ I created a diagram to display the initial data model by setting up a new DB Dia
 ---
 
 ### Step 2: Establish the Relationships Among the Primary Keys (PK) and Foreign Keys (FK)
-Next, I used the `ALTER TABLE` statement to establish the relationships between each PK and its corresponding FK, as represented in the image above.
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1NPc9k9RbpJe9gcHcbza6zPkMgbZpIT69">
+
+Next, I used the `ALTER TABLE` statement to establish the relationships between each PK and its corresponding FK, as represented in the image above.
 
 <br><br>
 <br><br>
 ---
 
 ### Step 3: Display the Final Data Model
-The final diagram visually represents the completed data model, showing the relationships between the tables according to their respective PK and FK.
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-">
+
+The final diagram visually represents the completed data model, showing the relationships between the tables according to their respective PK and FK.
 
 
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
