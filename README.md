@@ -93,6 +93,11 @@ I created a diagram to display the initial data model by setting up a new DB Dia
 ### Step 2: Establish the Relationships Among the Primary Keys (PK) and Foreign Keys (FK)
 <img align="center" width="500" height="320" src="https://drive.google.com/uc?id=1NPc9k9RbpJe9gcHcbza6zPkMgbZpIT69">
 
+<div align="center">
+  <img width="500" height="320" 
+       src="https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-">
+</div>
+
 Next, I used the `ALTER TABLE` statement to establish the relationships between each PK and its corresponding FK, as represented in the image above.
 
 <br><br>
