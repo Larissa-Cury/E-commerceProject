@@ -115,6 +115,7 @@ The final diagram visually represents the completed data model, showing the rela
 Business Problems: 
 
 * _What is the overall sales performance and typical revenue generated during the past three years?_
+   - The total sales considering all periods is $4,587,920 with a mean of $211.30 per year. This number in isolation does not tell much. Because of that, I also analyzed Sales YTD in order to compare the sales growth over the months and years. If the company had a threshold to achieve, which could be from its own or based on market trends, then comparing the total sales to it would be an interesting KPI.
 * _How are current-year sales progressing compared to previous full-year performances?_
 * Given that we have data until September, 2024, _Are we experiencing consistent growth or decline in sales during the same period across consecutive years?_
   
