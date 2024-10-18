@@ -102,6 +102,15 @@ Next, I used the `ALTER TABLE` statement to establish the relationships between 
 
 The final diagram visually represents the completed data model, showing the relationships between the tables according to their respective PK and FK.
 
+## Exploratory Data Analysis in SQL 
+
+- Main KPIs Observed:
+
+  * Total and Average Sales across all periods (2022 - 2024)
+  * Sales Year-To-Date (2022 - 2024)
+  * Sales Year-On-Year considering Jan - September
+ 
+  
 
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
 
