@@ -102,6 +102,9 @@ Next, I used the `ALTER TABLE` statement to establish the relationships between 
 
 The final diagram visually represents the completed data model, showing the relationships between the tables according to their respective PK and FK.
 
+<br><br>
+<br><br>
+
 ## Analyzing Sales Performance Across Years 
 
 Business Problems: 
