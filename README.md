@@ -130,7 +130,7 @@ Business Problems:
   * Total and Average Sales per year (2022 - 2024)
 
   <div align="center">
-  <img width="1200" height="200" 
+  <img width="1200" height="350" 
        src="https://drive.google.com/uc?id=19wVv2HhzJVsz3uM4e8QUgbxlPR7Ben0W">
 </div>
 
