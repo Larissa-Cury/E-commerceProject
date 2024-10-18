@@ -114,7 +114,16 @@ Business Problems:
 
   * Total and Average Sales across all periods (2022 - 2024)
   
-<img style="display: block; margin: 5px auto;" width="750" height="400" src="https://drive.google.com/uc?id=1ORU_-b_dUiCeZygPqpoJ8VIwYBoAZ_4N">
+```
+USE ManedWolfPetCenterDB;
+
+ -- What is the total and average sales revenue across years ? 
+
+SELECT
+	FORMAT(SUM(S.total_amount),'C0') AS 'Total Sales', -- Sum up all data and format in $ style w/ 0 decimals
+	FORMAT(AVG(S.total_amount), 'C2') AS 'Sales Avg' -- Avg all data and format in $ style w/ 2 decimals
+FROM fact_sales AS S
+```
 
   * Total and Average Sales per year (2022 - 2024)
 
