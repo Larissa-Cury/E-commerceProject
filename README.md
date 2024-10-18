@@ -114,9 +114,12 @@ Business Problems:
 
   * Total and Average Sales across all periods (2022 - 2024)
   
-<img style="display: block; margin: 10px auto;" width="500" height="320" src="https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-">
+<img style="display: block; margin: 5px auto;" width="500" height="320" src="https://drive.google.com/uc?id=1ORU_-b_dUiCeZygPqpoJ8VIwYBoAZ_4N">
 
-  * Total and Average Sales per year (2022 - 2024) 
+  * Total and Average Sales per year (2022 - 2024)
+
+<img style="display: block; margin: 5px auto;" width="500" height="320" src="https://drive.google.com/uc?id=19wVv2HhzJVsz3uM4e8QUgbxlPR7Ben0W">
+
   * Sales Year-To-Date (2022 - 2024)
   * Sales Year-On-Year considering Jan - September
  
