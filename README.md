@@ -102,14 +102,28 @@ Next, I used the `ALTER TABLE` statement to establish the relationships between 
 
 The final diagram visually represents the completed data model, showing the relationships between the tables according to their respective PK and FK.
 
-## Exploratory Data Analysis in SQL 
+## Analyzing Sales Performance Across Years 
 
+Business Problems: 
+
+* _What is the overall sales performance and typical revenue generated during the past three years?_
+* _How are current-year sales progressing compared to previous full-year performances?_
+* Given that we have data until September, 2024, _Are we experiencing consistent growth or decline in sales during the same period across consecutive years?_
+  
 - Main KPIs Observed:
 
   * Total and Average Sales across all periods (2022 - 2024)
+  
+<img style="display: block; margin: 10px auto;" width="500" height="320" src="https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-">
+
+  * Total and Average Sales per year (2022 - 2024) 
   * Sales Year-To-Date (2022 - 2024)
   * Sales Year-On-Year considering Jan - September
  
+  
+
+
+
   
 
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
