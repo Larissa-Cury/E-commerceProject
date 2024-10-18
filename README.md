@@ -131,7 +131,7 @@ Business Problems:
 
   <div align="center">
   <img width="900" height="350" 
-       src="https://drive.google.com/uc?id=19wVv2HhzJVsz3uM4e8QUgbxlPR7Ben0W">
+       src="https://drive.google.com/uc?id=1XT-lwW7VU8f2BNnoJ1njBXnDTFkje4tT">
 </div>
 
   * Sales Year-To-Date (2022 - 2024)
