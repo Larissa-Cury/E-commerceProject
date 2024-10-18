@@ -123,7 +123,7 @@ Business Problems:
   * Total and Average Sales across all periods (2022 - 2024)
 
   <div align="center">
-  <img width="1000" height="300" 
+  <img width="1200" height="400" 
        src="https://drive.google.com/uc?id=1ORU_-b_dUiCeZygPqpoJ8VIwYBoAZ_4N">
 </div>
 
