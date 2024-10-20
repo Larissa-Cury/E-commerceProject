@@ -148,15 +148,20 @@ Business Problems:
     - The second Windown Function creates `YR_SALES`, which calculates sales for the whole period;
     - I also made use of `FORMAT` in order to return the results in the current format and with zero decimals by using ``FORMAT(XXX, 'C0')`
     - I also renamed Sales as `SALES` to keep the formating I used for the other columns (all in capital letters)
+    - The resulting .CSV file can be accessed HERE.
       
   <div align="center">
   <img width="900" height="350" 
        src="https://drive.google.com/uc?id=1K2of3tuQrPTJqntc2ePknuii0IP_ujxC">
 </div>
 
- 
-  * Sales Year-On-Year considering Jan - September
-    - The query follows the same rationale described above. However, in order to improve efficiency and processing, I filtered only the period from Jan - Sept by adding this line in the code, given that this was the period of interest. 
+   * Sales Year-On-Year considering Jan - September
+    - The query follows the same rationale described above. However, in order to improve efficiency and processing, I filtered only the period from Jan - Sept by adding this line in the code, given that this was the period of interest.
+   
+  <div align="center">
+  <img width="900" height="350" 
+       src="https://drive.google.com/uc?id=14gT5iQIZDqUYyj6Hqa0qFwytKmiiQCR">
+</div>
 
   * Rates of Growth (in R)
     - The code calculates the ratio of growth considering the full years (2023 and 2022) as well as the ratio of growth considering the YTD data extracted from SQL. Ratio of growth was calculated considering the following formula: `growthRate = ((current_year - comparison_year)/comparion_year)*100`  
