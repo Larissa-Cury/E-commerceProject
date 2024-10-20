@@ -136,7 +136,7 @@ Business Problems:
        src="https://drive.google.com/uc?id=1ORU_-b_dUiCeZygPqpoJ8VIwYBoAZ_4N">
 </div>
 
-  * Total and Average Sales per year (2022 - 2024)
+* Total and Average Sales per year (2022 - 2024)
     - I used the same functions described above to return the sum and the average sales while grouping by year. This was done by using the `GROUP BY` statement, which summarizes `Total Sales Per Year` and `Sales Avg Per Year` by year.
 
   <div align="center">
