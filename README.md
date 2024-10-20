@@ -116,13 +116,13 @@ Business Problems:
 
 * _What is the overall sales gross revenue generated during the past three years?_
   
-   - The total sales considering all periods is `$4,587,920` with a mean of `$211.30` per year. This number in isolation does not tell much. Because of that, I also analyzed Sales YTD in order to compare the sales growth over the months and years. If the company had a threshold to achieve, which could be from its own or based on market trends, then comparing the total sales to it would be an interesting KPI.
+   - The total sales considering all periods is `$4,587,920` with a mean of `$211.30`. This number in isolation does not tell much. If the company had a threshold to achieve, which could be from its own or based on market trends, then comparing the total sales to it would be an interesting KPI. I then calculated the total and average sales per year.
      
 * _How are sales growting considering previous full-year performances?_
 
-  - The total sales was `$1,655,673` in 2022, `$1,673,819` in 2023 and `$1,258,429` from Jan to Sept 2024. Considering the full-years, there was a growth of ~ `1.1% ($18.146)` in sales from 2022 to 2024. Ideally, this result should be compared to the company's growth goal and/or to market trends. Given that 2024 is not finished by the time the anaylsis was performed, I also performed a year-to-date (YTD) analysis in order to compare 2024 sales to the same period in 2022 and 2023.  
+  - The total sales was `$1,655,673` in 2022, `$1,673,819` in 2023 and `$1,258,429` from Jan to Sept 2024. Considering the full-years, there was a growth of ~ `1.1% ($18.146)` in sales from 2022 to 2024. Ideally, this result should be compared to the company's growth goal and/or to market trends. Given that 2024 was not finished by the time the anaylsis was performed, I also performed a year-to-date (YTD) analysis in order to compare 2024 sales to the same period in 2022 and 2023.  
 
-* Given that we have data until September, 2024, _Are we experiencing consistent growth or decline in sales during the same period across consecutive years?_
+* _Are we experiencing consistent growth or decline in sales during the same period across consecutive years?_ (Given that we have data until September, 2024)
 
   - Sales YTD from January to September were `$1,239,682` in 2022, `$1,251,409` in 2023 and `$1,258,429` in 2024. This means that there was a growth of ~ `.56% ($7.020)` from 2024 compared to 2023 and ~`1.51% ($18.747)` compared to 2022. Moreover, there was a growth rate from ~ `.95% ($11.727)` considering the same period from 2022 to 2023. Even though the company has grown from 2023 to 2024, it has not grown on the same rate as the previous years comparison (i.e, 2022 to 2023). 
   
@@ -169,13 +169,6 @@ Business Problems:
     - The code calculates the ratio of growth considering the full years (2023 and 2022) as well as the ratio of growth considering the YTD data extracted from SQL. Ratio of growth was calculated considering the following formula: `growthRate = ((current_year - comparison_year)/comparion_year)*100`  
 
  
-  
-
-
-
-  <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=12Uq57n-5zp_Eo0GuFGSrNasFWk6jq7vk">
-
-
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
 
 <br><br>
