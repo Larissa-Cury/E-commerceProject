@@ -124,7 +124,7 @@ Business Problems:
 
 * _Are we experiencing consistent growth or decline in sales during the same period across consecutive years?_ (Given that we have data until September, 2024)
 
-  - Sales YTD from January to September were `$1,239,682` in 2022, `$1,251,409` in 2023 and `$1,258,429` in 2024. This means that there was a growth of ~ `.56% ($7.020)` from 2024 compared to 2023 and ~`1.51% ($18.747)` compared to 2022. Moreover, there was a growth rate from ~ `.95% ($11.727)` considering the same period from 2022 to 2023. Even though the company has grown from 2023 to 2024, it has not grown on the same rate as the previous years comparison (i.e, 2022 to 2023). 
+  - Sales YTD from January to September were `$1,239,682` in 2022, `$1,251,409` in 2023 and `$1,258,429` in 2024. This means that there was a growth of ~ `.56% ($7.020)` from 2024 compared to 2023 and ~ `1.51% ($18.747)` compared to 2022. Moreover, there was a growth rate from ~ `.95% ($11.727)` considering the same period from 2022 to 2023. Even though the company has grown from 2023 to 2024, it has not grown on the same rate as the previous years comparison (i.e, 2022 to 2023). 
   
 - Main KPIs Observed:
 
@@ -137,7 +137,7 @@ Business Problems:
 </div>
 
   * Total and Average Sales per year (2022 - 2024)
-    - I used the same functions described above to return the sum and the average sales while grouping by year. This was done by using the `GROUP BY` statement, which summarizes `Total Sales Per Year` and ``Sales Avg Per Year` by year.
+    - I used the same functions described above to return the sum and the average sales while grouping by year. This was done by using the `GROUP BY` statement, which summarizes `Total Sales Per Year` and `Sales Avg Per Year` by year.
 
   <div align="center">
   <img width="900" height="350" 
@@ -148,7 +148,7 @@ Business Problems:
     - I created a CTE (Common Table Expression) named `TOTAL_SALES`. This CTE returns the total sales grouped by year and month in `Sales` as well as the year and month in `YR` and `MO`, respectively;
     - The second `SELECT` makes use of these columns in order to calculate the total amount of sales up to the current line. It makes use of a Windon Function that groups `Sales` by year and orders calculation by both year and month from all lines above (`ROWS BETWEEN UNBOUNDED PRECEDING`) until the current row being evaluated (`CURRENT ROW`);
     - The second Windown Function creates `YR_SALES`, which calculates sales for the whole period;
-    - I also made use of `FORMAT` in order to return the results in the current format and with zero decimals by using ``FORMAT(XXX, 'C0')`
+    - I also made use of `FORMAT` in order to return the results in the current format and with zero decimals by using `FORMAT(XXX, 'C0')`
     - I also renamed Sales as `SALES` to keep the formating I used for the other columns (all in capital letters);
     - The resulting .CSV file can be accessed HERE.
       
@@ -158,7 +158,7 @@ Business Problems:
 </div>
 
    * Sales Year-On-Year considering Jan - September
-       - The query follows the same rationale described above. However, in order to optimize processing, I filtered the period from Jan - Sept by adding the line below in the code, given that this was the period of interest. 
+       - The query follows the same rationale described above. However, in order to optimize processing, I filtered the period from Jan - Sept by adding the ``WHERE` statement below in the code, given that this was the period of interest. 
    
   <div align="center">
   <img width="900" height="350" 
