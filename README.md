@@ -175,6 +175,8 @@ Business Problems:
 * _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) across years ?_
   - Food had the greatest revenue considering the whole dataset, followed by Hygiene, Snacks, Medicine and Toys. The results are summarized in the table below:
     
+<div align="center">
+
 | CATEGORY   | SALES     | AVG_SALES |
 |------------|-----------|-----------|
 | Food       | $1,321,316 | $261.08  |
@@ -182,6 +184,8 @@ Business Problems:
 | Snacks     | $839,891   | $201.46  |
 | Medicine   | $781,598   | $188.84  |
 | Toys       | $721,696   | $176.67  |
+
+</div>
 
 * _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) per year?_
 * _Which product category has the highest total sales and which has the lowest across years?_
@@ -194,14 +198,12 @@ Business Problems:
   - Then, because I wanted to return the Category Name, I joined `dim_product` with `dim_category` by the `category_id` key;
   - I made use of the aggregate functions `SUM` and `AVG` to, respectively, return the sum and average of sales (column `total_amount` in `fact_sales`);
   - In order to group the results by category, I made use of `GROUP BY` to group the results by `category_name`, which I renamed in capital letters to match the pattern of the other columns;
-  - Finally, I ordered the data from the category with the highiest revenue to the one with the lowest using `ORDER BY`
+  - Finally, I ordered the data from the category with the highiest revenue to the one with the lowest using `ORDER BY` <br>
     
    <div align="center">
   <img width="900" height="350" 
-       src="https://drive.google.com/uc?id=1GfjnucOJ5YE1ZgooWb4_zah4iRseumr_">
+       src="https://drive.google.com/uc?id=1f3hj3Qg6XMv1Y-WQy0nXRWKg9FP73wJS">
   </div>
-
-
  
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
 
