@@ -224,6 +224,7 @@ Business Problems:
   - The sales breakdown per distributor sales indicates a roughtly balanced contribution to overall sales by region **(considering all years together)**. These results are displayed in the table below:
 
 <div align="center">
+
 | REGION              | SALES     | AVG_SALES | SALES % |
 |---------------------|-----------|-----------|---------|
 | South               | $969,756  | $214.98   | 21.14   |
@@ -235,16 +236,15 @@ Business Problems:
 </div>
 
 * _How much does each category sells in each region? Which region sells more of within category?_
-  - The full breakdown of how much each category sells within each region can be found in the .CSV file I exported from the SQL query below. The full breakdown of the ranks with each category can also be found in the sale file.
-    - Overall, all categories sell more in the `Sounth` region, despite `Hygiene`, which is more sold in `Downtown`.
+  - The full breakdown of how much each category sells within each region can be found in the .CSV file I exported from the SQL query below. The full breakdown of the ranks with each category can also be found in the same file.
+    - Overall, all categories sell more in the `Sounth` region, despite `Hygiene`, which is more sold in `Downtown`. Here I present a filtered version of the table:
 
 * _Which category sells more in each region?_
  - The analysis indicates that `Food` is the #1 category in all regions, which matches the overall trend of the company (see Sales by Category above). The break down of revenue per category whihin each region can be found HERE, which is the the .CSV file I extracted from the SQL query below.
 
 * Further analysis:
-  - A manager could also be interested in the sales breakdown by distributor region by year. That is, to analyse each year individually.
+  - It would also be interesting to examine the sales breakdown by distributor region by year. That is, to analyse each year individually. This could give insights of possible trends over the years and also guide future actions. 
  
-
 -- Main KPIs Observed:
 
 * Overall Sales per distributor region and percentage of contribution of each region to overall sales
@@ -267,16 +267,16 @@ Business Problems:
      -  In order to do it, I made use of window functions. Precisely, I used `RANK()` to obtain the rank of each category (this is why I used `PARTITION BY CATEGORY_NAME` considering the descending order of `Sales`. I named this `SALES_RANK`
  
      <div align="center">
-       <img width="900" height="350" 
+       <img width="900" height="450" 
        src="https://drive.google.com/uc?id=1uSOiY6p4DrXudG_dIQQNanP-iyxKPOOR">
       </div>
 
 * Overall Sales by Region broken down by Category
   - The rationale I used here is the exactly same as I did for the previous KPI. However, this is a "simpler" way of doing so without using the CTE. So, instead of using the CTE here I used `ORDER BY SUM(S.total_amount)` to order each category in descending way within each region (this is why I also used `PARTITION BY D.distributor_region`).
-  - Note. Even though this way might seem easier, I prefer using the CTE because it makes the code clear and more readable.
+  - *Note*. Even though this way might seem easier, I prefer using the CTE because it makes the code clear and more readable.
 
      <div align="center">
-       <img width="900" height="350" 
+       <img width="900" height="450" 
        src="https://drive.google.com/uc?id=1jU30MBc3yROO1HwCFaGv4Rw17S1tvySr">
       </div>
 
