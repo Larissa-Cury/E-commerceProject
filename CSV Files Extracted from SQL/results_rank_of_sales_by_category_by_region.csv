@@ -1,0 +1,25 @@
+﻿Food;South;1;$289,934;$263.58
+Food;Downtown;2;$263,750;$257.82
+Food;Baixada Fluminense;3;$258,101;$253.29
+Food;West;4;$256,825;$271.77
+Food;North;5;$252,706;$259.45
+Hygiene;Downtown;1;$196,286;$216.17
+Hygiene;North;2;$183,726;$216.15
+Hygiene;South;3;$182,839;$219.23
+Hygiene;West;4;$182,820;$214.58
+Hygiene;Baixada Fluminense;5;$177,748;$218.10
+Medicine;South;1;$163,711;$191.25
+Medicine;Baixada Fluminense;2;$161,571;$188.75
+Medicine;North;3;$154,913;$186.42
+Medicine;Downtown;4;$154,281;$187.69
+Medicine;West;5;$147,122;$190.08
+Snacks;South;1;$180,508;$208.20
+Snacks;North;2;$169,467;$205.41
+Snacks;Baixada Fluminense;3;$167,954;$198.29
+Snacks;Downtown;4;$164,725;$196.57
+Snacks;West;5;$157,238;$198.53
+Toys;South;1;$152,764;$178.88
+Toys;North;2;$152,371;$178.00
+Toys;Baixada Fluminense;3;$149,213;$178.06
+Toys;Downtown;4;$140,979;$175.78
+Toys;West;5;$126,369;$171.93
