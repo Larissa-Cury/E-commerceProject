@@ -280,6 +280,42 @@ Business Problems:
        src="https://drive.google.com/uc?id=1jU30MBc3yROO1HwCFaGv4Rw17S1tvySr">
       </div>
 
+## Analysis of Customer Behavior and Profile
+
+Business Problems: 
+
+* _Are there differences in purchases between male and female customers?_? 
+ - There seems to be a balance between males and females in terms of how much each gender contribute to purchase. Considering overall sales, females contribute around `48.12%` while males contribute `51.88`. This pattern was also observed when breaking down sales by year (See KPIs below).
+
+* _Do single and divorced customers spend differently compared to married costumers_?
+  - Single and divorced customers contribute the most to both overall and within-year sales. The overall contribution of single customers is `32.73%` and of divorced is `34.57%` while married costumers contribute to `32.70%` to sales. This pattern repeats itself when breaking the data down by year. Hence, while married costumers make up 1/3 of sales, single and divorced contribute to 2/3 of sales. 
+  
+
+-- Main KPIs Observed:
+
+* Overall Sales by Gender
+  - I first joinned `fact_sales` and ``dim_customers` by the `customer_id` key in order to have access to information about the customers;
+  - Then, I summed up the sales amount and grouped by gender;
+  - After that, I included a subquery which calculates the total sales without grouping it;
+  - With this subquery, I calculates the percentage each gender contributed to overall sales
+    
+      -- INSERT PICTURE GENDER 1- -
+
+* Sales by Gender breaking down by year
+  - I followed a same rationale as in calculating `Overall Sales by Gender``. Here, however, I inserted the query into a Common Table Expression (CTE) because I wanted to calculate the proportion each gender contributed to sales within the years;
+  - In order to achieve it, I made use of a window function to summarize the years revenue and used it to calculate the percentage each gender contributed to sales within years
+ 
+    -- INSERT PICTURE GENDER 2- -
+
+  * Overall Sales by Marital Status
+    - I adopted the exact same rationale I adoped to calculate `Overall Sales by Gender`, only changing `Gender` for `Marital_Status`
+   
+     -- INSERT PICTURE MS 1 -
+   
+  * Overall Sales by Marital Status breaking down by year
+    - I adopted the exact same rationale I adoped to calculate `Overall Sales by Gender  breaking down by year`, only changing `Gender` for `Marital_Status`
+
+    -- INSERT PICTURE MS 2 -
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
 
 <br><br>
