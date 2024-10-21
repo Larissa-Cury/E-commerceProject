@@ -175,7 +175,7 @@ Business Problems:
 * _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) across years ?_
   - Food had the greatest revenue considering the whole dataset, followed by Hygiene, Snacks, Medicine and Toys. The results are summarized in the table below:
     
-    | CATEGORY   | SALES     | AVG_SALES |
+| CATEGORY   | SALES     | AVG_SALES |
 |------------|-----------|-----------|
 | Food       | $1,321,316 | $261.08  |
 | Hygiene    | $923,419   | $216.82  |
