@@ -188,7 +188,7 @@ Business Problems:
 </div>
 
 * _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) per year? Which product category had the highest total sales and which had the lowest?_
-  - The breakdown of sales by category by year followed the same trend as the overall sales across years. That is, `Food` had the greatest revenue while `Toys` had the lowest in all years. The .CSV file containing the result of the SQL query can be found HERE.
+  - The breakdown of sales by category by year followed the same trend as the overall sales across years. That is, `Food` had the greatest revenue while `Toys` had the lowest in all years. The .CSV file containing the result of the SQL query explained below can be found <a href="https://github.com/Larissa-Cury/E-commerceProject/blob/3d23ab00069ecf1fabf508ef87eefd9d8fb2ea75/CSV%20Files%20Extracted%20from%20SQL/results_category_sales.csv" target="_blank">HERE</a>
 
 * Additional insights:
   - Overall, it makes sense that `Food` is the product category with the highiest revenue across years given that it is a main necessity. However, the company could invest on marketing and on promotions to sell more `Toys`. For example, a promotion in which a client buys some type of food and has a discount on a toy;
