@@ -172,8 +172,8 @@ Business Problems:
 
 Business Problems: 
 
-* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) across years ?_
-  - Food had the greatest revenue considering the whole dataset, followed by Hygiene, Snacks, Medicine and Toys. The results are summarized in the table below:
+* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) across years ? Which product category had the highest total sales and which has the lowest across years?_
+  - `Food` had the greatest revenue considering the whole dataset while `Toys` has the lowest. The results are summarized in descending way (from the highiest to the lowest) in the table below:
     
 <div align="center">
 
@@ -187,9 +187,12 @@ Business Problems:
 
 </div>
 
-* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) per year?_
-* _Which product category has the highest total sales and which has the lowest across years?_
-* _Which product category has the highest total sales and which has the lowest per year?_
+* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) per year? _Which product category had the highest total sales and which has the lowest per year?_
+  - The breakdown of sales by category by year followed the same trend as the overall sales across years. That is, `Food` had the greatest revenue followed by `Toys_ in all years. The .CSV file containing the result of the SQL query can be found HERE.
+
+* Additional insights:
+  - Overall, it makes sense that `Food` is the product category with the highiest revenue across years given that it is a main necessity. However, the company could invest on marketing and on promotions to sell more `Toys`. For example, a promotion in which a client buys some type of Food and has a discount on a toy;
+  - The company could also be interesting in breaking down the sales by product category by region and/or costumer profile to see if the consumption pattern differs depending on who is buying and where the purchase is being made. 
 
 -- Main KPIs observed:
 
@@ -204,9 +207,21 @@ Business Problems:
     
    <div align="center">
   <img width="900" height="350" 
-       src="https://drive.google.com/uc?id=1f3hj3Qg6XMv1Y-WQy0nXRWKg9FP73wJS">
+       src="https://drive.google.com/uc?id=1YamHFoFIekGtjPWtg0oEiPaPz0Q540Nh">
   </div>
- 
+
+ * Total revenue per category per year
+  - The code follows the same rationale as the above one for the overall sales across years. Differently from it, however, here I extracted the year from `sale_date` in `fact_sale` and used this column to group the data using `GROUP BY`
+
+       <div align="center">
+       <img width="900" height="350" 
+       src="https://drive.google.com/uc?id=1xJZze7ZLxlKpz3X-5J2h5ORpe44sSIgz">
+      </div>
+
+    
+
+
+
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
 
 <br><br>
