@@ -118,7 +118,7 @@ Business Problems:
   
    - The total sales considering all periods is `$4,587,920` with a mean of `$211.30`. This number in isolation does not tell much. If the company had a threshold to achieve, which could be from its own or based on market trends, then comparing the total sales to it would be an interesting KPI. I then calculated the total and average sales per year.
      
-* _How are sales growting considering previous full-year performances?_
+* _How are sales growing considering previous full-year performances?_
 
   - The total sales was `$1,655,673` in 2022, `$1,673,819` in 2023 and `$1,258,429` from Jan to Sept 2024. Considering the full-years, there was a growth of ~ `1.1% ($18.146)` in sales from 2022 to 2024. Ideally, this result should be compared to the company's growth goal and/or to market trends. Given that 2024 was not finished by the time the anaylsis was performed, I also performed a year-to-date (YTD) analysis in order to compare 2024 sales to the same period in 2022 and 2023.  
 
