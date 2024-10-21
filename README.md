@@ -236,11 +236,11 @@ Business Problems:
 </div>
 
 * _How much does each category sells in each region? Which region sells more of within category?_
-  - The full breakdown of how much each category sells within each region can be found in the .CSV file I exported from the SQL query below. The full breakdown of the ranks with each category can also be found in the same file.
+  - The full breakdown of how much each category sells within each region can be found <a href="https://github.com/Larissa-Cury/E-commerceProject/blob/d1a97874ab3797e39ca81479810caec2c9a6abfb/CSV%20Files%20Extracted%20from%20SQL/results_rank_of_sales_by_category_by_region.csv" target="_blank">HERE</a>, which is the .CSV file I exported from the SQL query explained below. The full breakdown of the ranks with each category can also be found in the same file.
     - Overall, all categories sell more in the `Sounth` region, despite `Hygiene`, which is more sold in `Downtown`. Here I present a filtered version of the table:
 
 * _Which category sells more in each region?_
- - The analysis indicates that `Food` is the #1 category in all regions, which matches the overall trend of the company (see Sales by Category above). The break down of revenue per category whihin each region can be found HERE, which is the the .CSV file I extracted from the SQL query below.
+ - The analysis indicates that `Food` is the #1 category in all regions, which matches the overall trend of the company (see `Sales by Category` above). The break down of revenue per category whihin each region can be found <a href="https://github.com/Larissa-Cury/E-commerceProject/blob/146e6b0f053f3a34a12cc6b31db8195b5f9dd808/CSV%20Files%20Extracted%20from%20SQL/results_rank_of_sales_by_region_by_category.csv" target="_blank">HERE</a>, which is the the .CSV file I extracted from the SQL query explained below.
 
 * Further analysis:
   - It would also be interesting to examine the sales breakdown by distributor region by year. That is, to analyse each year individually. This could give insights of possible trends over the years and also guide future actions. 
