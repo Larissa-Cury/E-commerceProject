@@ -198,7 +198,9 @@ Business Problems:
   - Then, because I wanted to return the Category Name, I joined `dim_product` with `dim_category` by the `category_id` key;
   - I made use of the aggregate functions `SUM` and `AVG` to, respectively, return the sum and average of sales (column `total_amount` in `fact_sales`);
   - In order to group the results by category, I made use of `GROUP BY` to group the results by `category_name`, which I renamed in capital letters to match the pattern of the other columns;
-  - Finally, I ordered the data from the category with the highiest revenue to the one with the lowest using `ORDER BY` <br>
+  - Finally, I ordered the data from the category with the highiest revenue to the one with the lowest using `ORDER BY`
+
+<br>
     
    <div align="center">
   <img width="900" height="350" 
