@@ -197,7 +197,7 @@ Business Problems:
 -- Main KPIs observed:
 
 * Total revenue per category across years
-  - Given that there is no information about the category in `fact_sales`, I had to make use of multiple JOINS in order to be able to return the KPI (please check the diagram above for reference). I first made use of `INNER JOIN` to join the `fact_sales` to `dim_product` by the `product_id` key;
+  - Given that there is no information about the category in `fact_sales`, I made use of multiple JOINS in order to be able to return the product category name (please check the diagram above for reference). I first made use of `INNER JOIN` to join the `fact_sales` to `dim_product` by the `product_id` key;
   - Then, because I wanted to return the Category Name, I joined `dim_product` with `dim_category` by the `category_id` key;
   - I made use of the aggregate functions `SUM` and `AVG` to, respectively, return the sum and average of sales (column `total_amount` in `fact_sales`);
   - In order to group the results by category, I made use of `GROUP BY` to group the results by `category_name`, which I renamed in capital letters to match the pattern of the other columns;
@@ -209,7 +209,7 @@ Business Problems:
   </div>
 
  * Total revenue per category per year
-  - The code follows the same rationale as the above one for the overall sales across years. Differently from it, however, here I extracted the year from `sale_date` in `fact_sales` and used this column to group the data using `GROUP BY`
+   - The code follows the same rationale as the above one for the overall sales across years. Differently from it, however, here I extracted the year from `sale_date` in `fact_sales` and used this column to group the data using `GROUP BY`
 
        <div align="center">
        <img width="900" height="350" 
