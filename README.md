@@ -1,6 +1,6 @@
 ## E-commerce Sales Project 
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1dP7f8_ORmpAoVGIVIE5zeCCNPmubNNJJ">
-This project analysis a 4-year interval data of a fictionous e-commerce company especilized in the Pet Market. The company mostly attends adults (20-60y) who own either a dog or a cat. The pet shop especializes in 5 different product categories (food, snacks, medicine, toys and hygine), for which the company offers 10 different products. The pet shop has delivery deals with 5 distribution centers in the city of Rio de Janeiro, in 5 different regions of the city (South, North, West, "Baixada Fluminense" and Downtown).
+This project analysis a 3-year interval data of a fictionous e-commerce company especilized in the Pet Market. The company mostly attends adults (20-60y) who own either a dog or a cat. The pet shop especializes in 5 different product categories (food, snacks, medicine, toys and hygine), for which the company offers 10 different products. The pet shop has delivery deals with 5 distribution centers in the city of Rio de Janeiro, in 5 different regions of the city (South, North, West, "Baixada Fluminense" and Downtown).
 <br>
 The tools used in this project were R, SQL and Power Bi.
 
@@ -126,7 +126,7 @@ Business Problems:
 
   - Sales YTD from January to September were `$1,239,682` in 2022, `$1,251,409` in 2023 and `$1,258,429` in 2024. This means that there was a growth of ~ `.56% ($7.020)` from 2024 compared to 2023 and ~ `1.51% ($18.747)` compared to 2022. Moreover, there was a growth rate from ~ `.95% ($11.727)` considering the same period from 2022 to 2023. Even though the company has grown from 2023 to 2024, it has not grown on the same rate as the previous years comparison (i.e, 2022 to 2023). 
   
-- Main KPIs Observed:
+-- Main KPIs Observed:
 
   * Total and Average Sales across all periods (2022 - 2024)
     - I used the `SUM` and the `AVG` functions to, respectively, sum up and return the average sales across all years, without grouping by year.
@@ -158,7 +158,7 @@ Business Problems:
 </div>
 
    * Sales Year-On-Year considering Jan - September
-       - The query follows the same rationale described above. However, in order to optimize processing, I filtered the period from Jan - Sept by adding the ``WHERE` statement below in the code, given that this was the period of interest. 
+       - The query follows the same rationale described above. However, in order to optimize processing, I filtered the period from Jan - Sept by adding the `WHERE` statement below in the code, given that this was the period of interest. 
    
   <div align="center">
   <img width="900" height="350" 
@@ -166,7 +166,17 @@ Business Problems:
 </div>
 
   * Rates of Growth (in R)
-    - The code calculates the ratio of growth considering the full years (2023 and 2022) as well as the ratio of growth considering the YTD data extracted from SQL. Ratio of growth was calculated considering the following formula: `growthRate = ((current_year - comparison_year)/comparion_year)*100`  
+    - The code calculates the ratio of growth considering the full years (2023 and 2022) as well as the ratio of growth considering the YTD data extracted from SQL. Ratio of growth was calculated considering the following formula: `growthRate = ((current_year - comparison_year)/comparion_year)*100`
+   
+## Analyzing Sales by Product Category
+
+Business Problems: 
+
+* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) across years ?_
+* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) per year?_
+* _Which product category has the highest total sales and which has the lowest across years?_
+* _Which product category has the highest total sales and which has the lowest per year?_
+
 
  
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
