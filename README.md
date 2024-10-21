@@ -172,8 +172,8 @@ Business Problems:
 
 Business Problems: 
 
-* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) across years ? Which product category had the highest total sales and which has the lowest across years?_
-  - `Food` had the greatest revenue considering the whole dataset while `Toys` has the lowest. The results are summarized in descending way (from the highiest to the lowest) in the table below:
+* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) across years ? Which product category had the highest total sales and which had the lowest?_
+  - `Food` had the greatest revenue considering the whole dataset while `Toys` had the lowest. The results are summarized in descending way (from the highiest to the lowest) in the table below:
     
 <div align="center">
 
@@ -187,12 +187,12 @@ Business Problems:
 
 </div>
 
-* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) per year? _Which product category had the highest total sales and which has the lowest per year?_
-  - The breakdown of sales by category by year followed the same trend as the overall sales across years. That is, `Food` had the greatest revenue followed by `Toys_ in all years. The .CSV file containing the result of the SQL query can be found HERE.
+* _What is the total and average sales revenue for each product category (food, snacks, medicine, toys, hygiene) per year? Which product category had the highest total sales and which had the lowest?_
+  - The breakdown of sales by category by year followed the same trend as the overall sales across years. That is, `Food` had the greatest revenue while `Toys` had the lowest in all years. The .CSV file containing the result of the SQL query can be found HERE.
 
 * Additional insights:
-  - Overall, it makes sense that `Food` is the product category with the highiest revenue across years given that it is a main necessity. However, the company could invest on marketing and on promotions to sell more `Toys`. For example, a promotion in which a client buys some type of Food and has a discount on a toy;
-  - The company could also be interesting in breaking down the sales by product category by region and/or costumer profile to see if the consumption pattern differs depending on who is buying and where the purchase is being made. 
+  - Overall, it makes sense that `Food` is the product category with the highiest revenue across years given that it is a main necessity. However, the company could invest on marketing and on promotions to sell more `Toys`. For example, a promotion in which a client buys some type of food and has a discount on a toy;
+  - The company could also be interested in breaking down the sales by product category by region and/or costumer profile to see if the consumption pattern differs depending on who is buying and where the purchase is being made. 
 
 -- Main KPIs observed:
 
@@ -202,16 +202,14 @@ Business Problems:
   - I made use of the aggregate functions `SUM` and `AVG` to, respectively, return the sum and average of sales (column `total_amount` in `fact_sales`);
   - In order to group the results by category, I made use of `GROUP BY` to group the results by `category_name`, which I renamed in capital letters to match the pattern of the other columns;
   - Finally, I ordered the data from the category with the highiest revenue to the one with the lowest using `ORDER BY`
-
-<br>
-    
+  
    <div align="center">
   <img width="900" height="350" 
        src="https://drive.google.com/uc?id=1YamHFoFIekGtjPWtg0oEiPaPz0Q540Nh">
   </div>
 
  * Total revenue per category per year
-  - The code follows the same rationale as the above one for the overall sales across years. Differently from it, however, here I extracted the year from `sale_date` in `fact_sale` and used this column to group the data using `GROUP BY`
+  - The code follows the same rationale as the above one for the overall sales across years. Differently from it, however, here I extracted the year from `sale_date` in `fact_sales` and used this column to group the data using `GROUP BY`
 
        <div align="center">
        <img width="900" height="350" 
