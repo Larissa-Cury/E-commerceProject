@@ -377,7 +377,7 @@ Business Problems:
 * _Do customers with different numbers of pets spend differently considering each category?_
 
   - A shop pattern can be observed across product categories. That is, customers who own more than 2 pets are the top spenders in all categories while customers with 1 or 2 pets variate. For example, customers with one pet are the second top spends in `Food`, `Hygine` and `Toys` while customers with 2 pets are the second top spenders in `Medicine` and `Snacks`. This behavior is not expected given that an additional pet should imply the necessity of more expenses. Maybe factors such as region, family income, program fidelity, among others, might be causing this behavior.
-  - The .CSV file obtained from the SQL query can be acessed HERE.
+  - The .CSV file obtained from the SQL query can be acessed <a href="https://github.com/Larissa-Cury/E-commerceProject/blob/0ccd97fd27cdacb1e870188d4c3a4a7c25dac66f/CSV%20Files%20Extracted%20from%20SQL/results_number_of_pets_by_category.csv" target="_blank">HERE</a>.
   
 
 * _Are there differences in purchases between male and female customers?_? 
