@@ -4,7 +4,7 @@ This project analysis a 3-year interval data of a fictionous e-commerce company 
 
 <br>
 
-* The project aims to demonstrate some of my skills with `R`, `SQL` and ``Power Bi` along with my critical and analytical thinking skills. I broke it down into sections to improve organization and readability. 
+* The project aims to demonstrate some of my skills with `R`, `SQL` and `Power Bi` along with my critical and analytical thinking skills. I broke it down into sections to improve organization and readability. 
 
 - Part 1:
   - Creating the data in R
