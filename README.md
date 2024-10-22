@@ -105,6 +105,8 @@ I created 5 tables using `CREATE TABLE`. For each, I specified the PRIMARY KEY:
 
 With the tables created, I used `INSERT BULK` to insert the corresponding .CSV files from my computer into the new tables
 
+See the `createDBPortifolio` .SQL file <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/c119ed1acb87e809e5f7817054edd98038880cfd/SQL%20Files%20(Create%20DB%20and%20Data%20Model)" target="_blank">HERE</a>. 
+
 ## Creating a Data Model in SQL
 
 ### Step 1: Create the Empty Data Model (Without Relationships)
@@ -132,6 +134,8 @@ The final diagram visually represents the completed data model, showing the rela
   <img width="500" height="320" 
        src="https://drive.google.com/uc?id=13vkSjDcsHWd3Bx9m76MUaxjyL8oX2g0-">
 </div>
+
+See the `createRelantionships` .SQL file <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/c119ed1acb87e809e5f7817054edd98038880cfd/SQL%20Files%20(Create%20DB%20and%20Data%20Model)" target="_blank">HERE</a>. 
 
 ## Analyzing Sales Performance Across Years 
 
@@ -187,6 +191,8 @@ Business Problems:
   <img width="900" height="350" 
        src="https://drive.google.com/uc?id=14gT5iQIZDqUYyj6Hqa0qFwytKmiiQCRE">
 </div>
+
+-- See the `overall_sales`, `sales_YTD` and `sales_YTD - Jan to Sept` .SQL files <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/c119ed1acb87e809e5f7817054edd98038880cfd/SQL%20Files%20(Data%20Analysis)" target="_blank">HERE</a>. 
 
   * Rates of Growth (in R)
     - The code calculates the ratio of growth considering the full years (2023 and 2022) as well as the ratio of growth considering the YTD data extracted from SQL. Ratio of growth was calculated considering the following formula: `growthRate = ((current_year - comparison_year)/comparion_year)*100`
@@ -266,6 +272,8 @@ Business Problems:
        <img width="900" height="450" 
        src="https://drive.google.com/uc?id=1PD33-_r2pnSWzbxXleUK0a14PnPtuXOv">
       </div>
+
+-- See the `average_transaction_value` .SQL file <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/c119ed1acb87e809e5f7817054edd98038880cfd/SQL%20Files%20(Data%20Analysis)" target="_blank">HERE</a>. 
    
 ## Analyzing Sales by Product Category
 
@@ -314,6 +322,8 @@ Business Problems:
        <img width="900" height="350" 
        src="https://drive.google.com/uc?id=1xJZze7ZLxlKpz3X-5J2h5ORpe44sSIgz">
       </div>
+      
+-- See the `salesbyCategory` .SQL file <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/c119ed1acb87e809e5f7817054edd98038880cfd/SQL%20Files%20(Data%20Analysis)" target="_blank">HERE</a>. 
 
 ## Analyzing Sales by Distributor Region
 
@@ -378,6 +388,8 @@ Business Problems:
        <img width="900" height="450" 
        src="https://drive.google.com/uc?id=1jU30MBc3yROO1HwCFaGv4Rw17S1tvySr">
       </div>
+
+-- See the `salesbyregion` .SQL file <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/c119ed1acb87e809e5f7817054edd98038880cfd/SQL%20Files%20(Data%20Analysis)" target="_blank">HERE</a>. 
 
 ## Analysis of Customer Behavior and Profile
 
@@ -476,7 +488,9 @@ Business Problems:
        <img width="900" height="450" 
        src="https://drive.google.com/uc?id=1STEUdBpIgMRPdhG7hs6Wi5lcSV7_osXl">
     </div>
- 
+
+-- See the `analysisOfCustomerPetsOwned` and `analysisOfCustomerGender_MS` .SQL files <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/c119ed1acb87e809e5f7817054edd98038880cfd/SQL%20Files%20(Data%20Analysis)" target="_blank">HERE</a>. 
+
 ## Evaluation of Membership Program (Sales by Membership Category)
 
 Business Problems:
@@ -521,7 +535,7 @@ Business Problems:
        src="https://drive.google.com/uc?id=1ZWfMzQ2DuIhe6ai_7_n71tvYHGKAh_Ff">
     </div>
 
-Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
+-- See the `membership_program` .SQL file <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/c119ed1acb87e809e5f7817054edd98038880cfd/SQL%20Files%20(Data%20Analysis)" target="_blank">HERE</a>. 
 
 <br><br>
 
