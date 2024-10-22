@@ -399,7 +399,10 @@ Business Problems:
   - I then used `GROUP BY` because I wanted the results (aka, `Number of Clients` and `Sales` to be grouped by `N_OF_PETS`;
   - Finally, I ordered the results in descending way considering `ALL SALES`;
  
-    -- INSERT PHOTO HERE --
+    <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=17riSdJCmPMKxI0WBRkT32E1vB0fZkfgd">
+    </div>
 
 * Overall Sales by Pet Ownership and Category
     - I followed the same rationale I described in `Overall Sales and Number of Clients by Pet Owenership` to conditionally create the `N_of_Pets` column;
@@ -409,7 +412,10 @@ Business Problems:
     - Then, I also used  `SUM(PURCHASE)` because I wanted to calculate the total overall revenue considering how many pets a client owns;
     - Finally, to obtain this result, I grouped the query by `N_OF_PETS` and `CAT_NAME`
 
-  -- INSERT PICTURE HERE - 
+    <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=1N84idb3pBPkO8Z3RLaz4-ftrs_fdIQ6n">
+    </div>
 
 
 * Overall Sales by Gender
