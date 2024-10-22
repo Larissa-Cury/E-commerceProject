@@ -424,24 +424,36 @@ Business Problems:
   - After that, I included a subquery which calculates the total sales without grouping it;
   - With this subquery, I calculates the percentage each gender contributed to overall sales
  
-      -- INSERT PICTURE GENDER 1- -
+    <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=1sXEHF-JdDJiUfg_hmuSgvp9xSHiBcm3X">
+    </div>
 
 * Sales by Gender breaking down by year
   - I followed a same rationale as in calculating `Overall Sales by Gender``. Here, however, I inserted the query into a Common Table Expression (CTE) because I wanted to calculate the proportion each gender contributed to sales within the years;
   - In order to achieve it, I made use of a window function to summarize the years revenue and used it to calculate the percentage each gender contributed to sales within years
  
-    -- INSERT PICTURE GENDER 2- -
+    <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=1KAB8kZDX4gZnVYh5rvRnPI8GRcdQXQfT">
+    </div>
 
   * Overall Sales by Marital Status
     - I adopted the exact same rationale I adoped to calculate `Overall Sales by Gender`, only changing `Gender` for `Marital_Status`
    
-     -- INSERT PICTURE MS 1 -
-   
+    <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=1px5Ox_ozbw_1V5k2UBxThPgRU6yHcgs3">
+    </div>
+      
   * Overall Sales by Marital Status breaking down by year
     - I adopted the exact same rationale I adoped to calculate `Overall Sales by Gender  breaking down by year`, only changing `Gender` for `Marital_Status`
 
-    -- INSERT PICTURE MS 2 -
-
+    <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=12FPc0PESE6-AeF4W_la0bcrHX1X5Ctgk">
+    </div>
+ 
 ## Evaluation of Membership Program (Sales by Membership Category)
 
 Business Problems:
