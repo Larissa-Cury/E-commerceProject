@@ -1,6 +1,28 @@
 ## E-commerce Sales Project 
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1dP7f8_ORmpAoVGIVIE5zeCCNPmubNNJJ">
-This project analysis a 3-year interval data of a fictionous e-commerce company especilized in the Pet Market. The company mostly attends adults (20-60y) who own either a dog or a cat. The pet shop especializes in 5 different product categories (food, snacks, medicine, toys and hygine), for which the company offers 10 different products. The pet shop has delivery deals with 5 distribution centers in the city of Rio de Janeiro, in 5 different regions of the city (South, North, West, "Baixada Fluminense" and Downtown).
+This project analysis a 3-year interval data of a fictionous e-commerce company especilized in the Pet Market. The pet shop especializes in 5 different product categories (food, snacks, medicine, toys and hygine), for which the company offers 10 different products. The pet shop has delivery deals with 5 distribution centers in the city of Rio de Janeiro, in 5 different regions of the city (South, North, West, "Baixada Fluminense" and Downtown).
+
+<br>
+* The project aims to demonstrate some of my skills with `R`, `SQL` and ``Power Bi` along with my critical and analytical thinking skills. I broke it down into sections to improve organization and readability. 
+
+- Part 1:
+  - Creating the data in R
+    
+- Part 2:
+  - Importing the .CSV files into `SQL SERVER`;
+  - Creating the database called `MannedWolfDB`;
+  - Creating the data model by estabilishing the relantionships between primary and foreign keys in the tables
+  
+- Part 3: 
+ - In this part, I discuss in details many business problems that might arise when analysing the data. For each problem,
+   - I provide an explanation based on the data analysis performed in `SQL`;
+   - Explain throughtly each `SQL QUERY` I used to obtain the relevant _Key Performance Indicators_ (KPIs);
+   - Provide a printscreen of the `SQL QUERY` to improve readability of this project
+     
+- Part 4 (which I'm currently in)
+   - I'm developing a dashboard in `Power Bi` in order to improve visualization and also to address other potential KPIs.
+  
+
 <br>
 The tools used in this project were R, SQL and Power Bi.
 
