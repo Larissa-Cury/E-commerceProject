@@ -167,6 +167,79 @@ Business Problems:
 
   * Rates of Growth (in R)
     - The code calculates the ratio of growth considering the full years (2023 and 2022) as well as the ratio of growth considering the YTD data extracted from SQL. Ratio of growth was calculated considering the following formula: `growthRate = ((current_year - comparison_year)/comparion_year)*100`
+
+## Analysis of Average Transaction Value (ATV)
+
+Business Problems: 
+
+* _What is the average transaction value (ATV) ?_
+  - The `Average Transaction Value` considering all years is `$211.30`.
+* _What is the average transaction value (ATV) by region? Which has the highiest and the lowest ATV?_
+  - The breakdown of ATV per region is depicted in the following table, which was obtained by running the SQL query detailed below. Across years, `South` had the highiest ATV and `Baixada Fluminense` had the lowest one. However, it is worth noticing that there is not a big difference among all distributors' regions and that all regions are slightly above the overall ATV. 
+  
+<div align="center">
+
+| Region              | ATV     |
+|---------------------|---------|
+| South               | $214.98 |
+| West                | $212.39 |
+| North               | $210.60 |
+| Downtown            | $209.43 |
+| Baixada Fluminense  | $209.05 |
+
+</div>
+
+* _How does the aaverage transaction value (ATV) change over time (yearly)?_
+  - The break down of ATV by year is displayed in the table below. Putting together with the analysis obtainged in `XXX`, despite the company's growth from one year to the other, the growth does not seem to be so expressive.
+
+<div align="center">
+| Year | ATV     |
+|------|---------|
+| 2024 | $212.07 |
+| 2023 | $212.12 |
+| 2022 | $209.90 |
+</div>
+
+*  _How does the aaverage transaction value (ATV) change over time (yearly) by region?_
+  - It is interesting to notice that there was some variation considering which region had the highiest and lowest ATV in the 3-year span. For example, while South was leading in 2022 with `$218.87` in sales, North, which had the lowest ATV in 2022 with `$201.78`, had the greatest ATV in both 2023 and 2024 with `$215.10`and `$216.71`, respectively. It is also worth noticing that the greatest ATV was in 2022. Even though the difference does not seem to be so expressive, it might be interesting to look for reasons why this happened nonetheless.
+  - The .CSV file obtained from the SQL query detailed below can be found <a href="https://github.com/Larissa-Cury/E-commerceProject/blob/fcaf5d332fdc92d5e520b56545bdd5793730c895/CSV%20Files%20Extracted%20from%20SQL/results_atv_by_region_by_year.csv" target="_blank">HERE</a>.
+
+* Other interesting KPIs regarding ATV for further analysis: 
+   - ATV considering each product category (across and per year)
+   - ATV considering each product category, considering the region (across and per year)
+   - ATV considering consumer profile (across and per year) 
+
+-- Main KPIs Observed: 
+  * Overall ATV across years and Overall ATV across years by region
+    - The Average Transaction Value (ATV) was calculated by dividing the total revenue of the company (`SUM(S.total_amount)`) by the number of orders (`COUNT(S.order_id)`)
+    - The first query returns the overall ATV value across years, without breaking down by either Year or Region (or any other interesting variable);
+    - I used `ÌNNER JOIN` in the second query to obtain region information by joining `dim_distributors` and `fact_sales` by the `distributor_id` key;
+    - Then, I grouped the data by `Region` to obtain the overall ATV by region
+
+     <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=1K0D4O5hqt-OIoSKRROtjor95lIRk1Tib">
+      </div>
+
+  * ATV by Year
+    - I used the same rationale described in `Overall ATV across years and Overall ATV across years by region` to obtain the ATV by year;
+    - Here, however, I added `GROUP BY` to group the data by Year, which I extracted using the `YEAR` function;
+
+      <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=1S5b4w4K43_r_Uf5b0vbggUvZBW9fcLrb">
+      </div>
+   
+  * ATV by Year and Region
+    - I used the exactly same rationale I used to obtain `ATV by Year`, with some additions;
+    - I used `ÌNNER JOIN` to join `dim_distributors` to `fact_sales` by the `distributor_key` in order to obtain the information regarding `Region`
+    - Then, I used this column to group the data by region and year using `GROUP BY`
+    - Finally, I ordered the data so that the regions with the greatest ATV values would be displayed before the ones with the lowest, in desciding order.
+
+      <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=1PD33-_r2pnSWzbxXleUK0a14PnPtuXOv">
+      </div>
    
 ## Analyzing Sales by Product Category
 
@@ -279,44 +352,6 @@ Business Problems:
        <img width="900" height="450" 
        src="https://drive.google.com/uc?id=1jU30MBc3yROO1HwCFaGv4Rw17S1tvySr">
       </div>
-
-## Analysis of Average Transaction Value (ATV)
-
-Business Problems: 
-
-* _What is the average transaction value (ATV) ?_
-  - The `Average Transaction Value` considering all years is `$211.30`.
-* _What is the average transaction value (ATV) by region? Which has the highiest and the lowest ATG_
-  - The breakdown of ATV per region is depicted in the following table, which was obtained from the SQL query detailed below. Across years, `South` had the highiest ATV and `Baixada Fluminense` had the lowest one. However, it is worth noticing that there is not a big difference among all distributors' regions. 
-  
-<div align="center">
-| Region              | ATV     |
-|---------------------|---------|
-| South               | $214.98 |
-| West                | $212.39 |
-| North               | $210.60 |
-| Downtown            | $209.43 |
-| Baixada Fluminense  | $209.05 |
-
-</div>
-* _How does the aaverage transaction value (ATV) change over time (yearly)?_
-
-
-*  _How does the aaverage transaction value (ATV) change over time (yearly) by region?_
-
--- Main KPIs Observed: 
-  * Overall ATV across years and Overall ATV across years by region
-    - The Average Transaction Value (ATV) was calculated by dividing the total revenue of the company (`SUM(S.total_amount)`) by the number of orders (`COUNT(S.order_id)`)
-    - The first query returns the overall ATV value across years, without breaking down by either Year or Region (or any other interesting variable);
-    - I used `ÌNNER JOIN` in the second query to obtain region information by joining `dim_distributors` and `fact_sales` by the `distributor_id` key;
-    - Then, I grouped the data by `Region` to obtain the overall ATV by region
-
-     <div align="center">
-       <img width="900" height="450" 
-       src="https://drive.google.com/uc?id=1K0D4O5hqt-OIoSKRROtjor95lIRk1Tib">
-      </div>
-
-
 
 ## Analysis of Customer Behavior and Profile
 
