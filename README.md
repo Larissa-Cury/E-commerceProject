@@ -426,7 +426,7 @@ Business Problems:
  
     <div align="center">
        <img width="900" height="450" 
-       src="https://drive.google.com/uc?id=1sXEHF-JdDJiUfg_hmuSgvp9xSHiBcm3X">
+       src="https://drive.google.com/uc?id=1Avkrk6Tr3eyJE-ub16z5bPMXwsEQ7Qlp">
     </div>
 
 * Sales by Gender breaking down by year
@@ -435,7 +435,7 @@ Business Problems:
  
     <div align="center">
        <img width="900" height="450" 
-       src="https://drive.google.com/uc?id=1KAB8kZDX4gZnVYh5rvRnPI8GRcdQXQfT">
+       src="https://drive.google.com/uc?id=1aTpXoTO4bVwA5l3RtIds8tGYqeNII0ZR">
     </div>
 
   * Overall Sales by Marital Status
@@ -443,7 +443,7 @@ Business Problems:
    
     <div align="center">
        <img width="900" height="450" 
-       src="https://drive.google.com/uc?id=1px5Ox_ozbw_1V5k2UBxThPgRU6yHcgs3">
+       src="https://drive.google.com/uc?id=1ueDPJm_xRcA4TIU-vA73Q1RiPOkLKfL1">
     </div>
       
   * Overall Sales by Marital Status breaking down by year
@@ -451,7 +451,7 @@ Business Problems:
 
     <div align="center">
        <img width="900" height="450" 
-       src="https://drive.google.com/uc?id=12FPc0PESE6-AeF4W_la0bcrHX1X5Ctgk">
+       src="https://drive.google.com/uc?id=1STEUdBpIgMRPdhG7hs6Wi5lcSV7_osXl">
     </div>
  
 ## Evaluation of Membership Program (Sales by Membership Category)
