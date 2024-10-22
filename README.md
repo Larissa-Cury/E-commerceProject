@@ -2,8 +2,7 @@
 <img align="right" width="500" height="320" src="https://drive.google.com/uc?id=1dP7f8_ORmpAoVGIVIE5zeCCNPmubNNJJ">
 This project analysis a 3-year interval data of a fictionous e-commerce company especilized in the Pet Market. The pet shop especializes in 5 different product categories (food, snacks, medicine, toys and hygine), for which the company offers 10 different products. The pet shop has delivery deals with 5 distribution centers in the city of Rio de Janeiro, in 5 different regions of the city (South, North, West, "Baixada Fluminense" and Downtown).
 
-<br>
-
+<br><br>
 * The project aims to demonstrate some of my skills with `R`, `SQL` and `Power Bi` along with my critical and analytical thinking skills. I broke it down into sections to improve organization and readability. 
 
 - Part 1:
