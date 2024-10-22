@@ -280,6 +280,44 @@ Business Problems:
        src="https://drive.google.com/uc?id=1jU30MBc3yROO1HwCFaGv4Rw17S1tvySr">
       </div>
 
+## Analysis of Average Transaction Value (ATV)
+
+Business Problems: 
+
+* _What is the average transaction value (ATV) ?_
+  - The `Average Transaction Value` considering all years is `$211.30`.
+* _What is the average transaction value (ATV) by region? Which has the highiest and the lowest ATG_
+  - The breakdown of ATV per region is depicted in the following table, which was obtained from the SQL query detailed below. Across years, `South` had the highiest ATV and `Baixada Fluminense` had the lowest one. However, it is worth noticing that there is not a big difference among all distributors' regions. 
+  
+<div align="center">
+| Region              | ATV     |
+|---------------------|---------|
+| South               | $214.98 |
+| West                | $212.39 |
+| North               | $210.60 |
+| Downtown            | $209.43 |
+| Baixada Fluminense  | $209.05 |
+
+</div>
+* _How does the aaverage transaction value (ATV) change over time (yearly)?_
+
+
+*  _How does the aaverage transaction value (ATV) change over time (yearly) by region?_
+
+-- Main KPIs Observed: 
+  * Overall ATV across years and Overall ATV across years by region
+    - The Average Transaction Value (ATV) was calculated by dividing the total revenue of the company (`SUM(S.total_amount)`) by the number of orders (`COUNT(S.order_id)`)
+    - The first query returns the overall ATV value across years, without breaking down by either Year or Region (or any other interesting variable);
+    - I used `ÌNNER JOIN` in the second query to obtain region information by joining `dim_distributors` and `fact_sales` by the `distributor_id` key;
+    - Then, I grouped the data by `Region` to obtain the overall ATV by region
+
+     <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=1K0D4O5hqt-OIoSKRROtjor95lIRk1Tib">
+      </div>
+
+
+
 ## Analysis of Customer Behavior and Profile
 
 Business Problems: 
