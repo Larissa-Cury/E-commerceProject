@@ -316,7 +316,7 @@ Business Problems:
     - Overall, all categories sell more in the `Sounth` region, despite `Hygiene`, which is more sold in `Downtown`. Here I present a filtered version of the table:
 
 * _Which category sells more in each region?_
- - The analysis indicates that `Food` is the #1 category in all regions, which matches the overall trend of the company (see `Sales by Category` above). The break down of revenue per category whihin each region can be found <a href="https://github.com/Larissa-Cury/E-commerceProject/blob/146e6b0f053f3a34a12cc6b31db8195b5f9dd808/CSV%20Files%20Extracted%20from%20SQL/results_rank_of_sales_by_region_by_category.csv" target="_blank">HERE</a>, which is the the .CSV file I extracted from the SQL query explained below.
+ - The analysis indicates that `Food` is the #1 category in all regions, which matches the overall trend of the company (see `Sales by Category` above). The break down of revenue per category within each region can be found <a href="https://github.com/Larissa-Cury/E-commerceProject/blob/146e6b0f053f3a34a12cc6b31db8195b5f9dd808/CSV%20Files%20Extracted%20from%20SQL/results_rank_of_sales_by_region_by_category.csv" target="_blank">HERE</a>, which is the the .CSV file I extracted from the SQL query explained below.
 
 * Further analysis:
   - It would also be interesting to examine the sales breakdown by distributor region by year. That is, to analyse each year individually. This could give insights of possible trends over the years and also guide future actions. 
@@ -360,21 +360,64 @@ Business Problems:
 
 Business Problems: 
 
+* _Do customers with more pets spend more ?_
+  - The analysis detailed obtained with the SQL query detailed below indicates that customers who have more than 2 pets spend more than both customers who own either 1 or 2 pets. However, owners of 1 pet still spent slightly more than owners of 2 pets. Moreover, the number of clients with more than 2 pets make up almost as twice the number of the other 2 categoies.
+  -  The results are broken down in the table below:
+ 
+<div align="center">
+
+| N_OF_PETS    | N_CLIENTS | ALL_SALES    |
+|--------------|-----------|--------------|
+| More than 2  | 10,785    | $2,257,720   |
+| One pet      | 5,503     | $1,171,412   |
+| Two pets     | 5,425     | $1,158,788   |
+  
+</div>
+
+* _Do customers with different numbers of pets spend differently considering each category?_
+
+  - A shop pattern can be observed across product categories. That is, customers who own more than 2 pets are the top spenders in all categories while customers with 1 or 2 pets variate. For example, customers with one pet are the second top spends in `Food`, `Hygine` and `Toys` while customers with 2 pets are the second top spenders in `Medicine` and `Snacks`. This behavior is not expected given that an additional pet should imply the necessity of more expenses. Maybe factors such as region, family income, program fidelity, among others, might be causing this behavior.
+  - The .CSV file obtained from the SQL query can be acessed HERE.
+  
+
 * _Are there differences in purchases between male and female customers?_? 
  - There seems to be a balance between males and females in terms of how much each gender contribute to purchase. Considering overall sales, females contribute around `48.12%` while males contribute `51.88`. This pattern was also observed when breaking down sales by year (See KPIs below).
 
 * _Do single and divorced customers spend differently compared to married costumers_?
   - Single and divorced customers contribute the most to both overall and within-year sales. The overall contribution of single customers is `32.73%` and of divorced is `34.57%` while married costumers contribute to `32.70%` to sales. This pattern repeats itself when breaking the data down by year. Hence, while married costumers make up 1/3 of sales, single and divorced contribute to 2/3 of sales. 
-  
+
+* Additional Insights and Further Analysis
+  - It would be interesting to cross the information regarding gender and marital status in order to see if there are differences in purchasing considering both variables simulteneously.
 
 -- Main KPIs Observed:
+
+* Overall Sales and Number of Clients by Pet Owenership
+  - For this query, I used `CASE WHEN` to create an additional column called `N_OF_PETS` tha classifies each customer in terms of how many pets they own;
+  - In order to do it, I used `INNER JOIN` to join `dim_customers` to `fact_table` by the `customer_id` key to obtain information about pet ownership;
+  - I then inserted this query into a Commom Table Expression (CTE) called `N_CTE` which returns `Customer_id`, `Sales` and `N_of_Pets`;
+  - I then selected the `N_OF_PETS` column from the CTE and used `COUNT` to count how many costumers were there in the database. I also used `SUM` to sum sales;
+  - I then used `GROUP BY` because I wanted the results (aka, `Number of Clients` and `Sales` to be grouped by `N_OF_PETS`;
+  - Finally, I ordered the results in descending way considering `ALL SALES`;
+ 
+    -- INSERT PHOTO HERE --
+
+* Overall Sales by Pet Ownership and Category
+    - I followed the same rationale I described in `Overall Sales and Number of Clients by Pet Owenership` to conditionally create the `N_of_Pets` column;
+    - I used the same sequence of multiple `INNER JOINS` I described in `XX` to obtain the product category;
+    - I inserted this query in a CTE called `N_CTE_CAT`;
+    - I made use of the Window Function `RANK` to rank the dataset considering the top spenders in each category (`PARTITION BY CAT_NAME`) considering their pet ownsership status ordering from the greatest to the lowest considering sales (`ORDER BY SUM(PURCHASE) DESC`);
+    - Then, I also used  `SUM(PURCHASE)` because I wanted to calculate the total overall revenue considering how many pets a client owns;
+    - Finally, to obtain this result, I grouped the query by `N_OF_PETS` and `CAT_NAME`
+
+  -- INSERT PICTURE HERE - 
+
 
 * Overall Sales by Gender
   - I first joinned `fact_sales` and ``dim_customers` by the `customer_id` key in order to have access to information about the customers;
   - Then, I summed up the sales amount and grouped by gender;
   - After that, I included a subquery which calculates the total sales without grouping it;
   - With this subquery, I calculates the percentage each gender contributed to overall sales
-    
+ 
       -- INSERT PICTURE GENDER 1- -
 
 * Sales by Gender breaking down by year
