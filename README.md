@@ -190,14 +190,16 @@ Business Problems:
 </div>
 
 * _How does the aaverage transaction value (ATV) change over time (yearly)?_
-  - The break down of ATV by year is displayed in the table below. Putting together with the analysis obtainged in `XXX`, despite the company's growth from one year to the other, the growth does not seem to be so expressive.
+  - The break down of ATV by year is displayed in the table below. Putting together with the analysis obtainged in `Analyzing Sales Performance Across Years` (please check above), despite the company's growth from one year to the other, the growth does not seem to be so expressive.
 
 <div align="center">
+  
 | Year | ATV     |
 |------|---------|
 | 2024 | $212.07 |
 | 2023 | $212.12 |
 | 2022 | $209.90 |
+
 </div>
 
 *  _How does the aaverage transaction value (ATV) change over time (yearly) by region?_
