@@ -204,7 +204,7 @@ Business Problems:
 
 *  _How does the aaverage transaction value (ATV) change over time (yearly) by region?_
   
-    - It is interesting to notice that there was some variation considering which region had the highiest and lowest ATV in the 3-year span. For example, while South was leading in 2022 with `$218.87` in sales, North, which had the lowest ATV in 2022 with `$201.78`, had the greatest ATV in both 2023 and 2024 with `$215.10`and `$216.71`, respectively. It is also worth noticing that the greatest ATV was in 2022. Even though the difference does not seem to be so expressive, it might be interesting to look for reasons why this happened nonetheless.
+    - It is interesting to notice that there was some variation considering which region had the highiest and lowest ATV in the 3-year span. For example, while South was leading in 2022 an ATV of `$218.87`, North, which had the lowest ATV in 2022 (`$201.78`), had the greatest ATV in both 2023 and 2024 of `$215.10`and `$216.71`, respectively. It is also worth noticing that the greatest ATV was in 2022. Even though the difference does not seem to be so expressive, it might be interesting to look for reasons why this happened nonetheless.
     - The .CSV file obtained from the SQL query detailed below can be found <a href="https://github.com/Larissa-Cury/E-commerceProject/blob/fcaf5d332fdc92d5e520b56545bdd5793730c895/CSV%20Files%20Extracted%20from%20SQL/results_atv_by_region_by_year.csv" target="_blank">HERE</a>.
 
 * Other interesting KPIs regarding ATV for further analysis: 
