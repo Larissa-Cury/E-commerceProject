@@ -441,6 +441,50 @@ Business Problems:
     - I adopted the exact same rationale I adoped to calculate `Overall Sales by Gender  breaking down by year`, only changing `Gender` for `Marital_Status`
 
     -- INSERT PICTURE MS 2 -
+
+## Evaluation of Membership Program (Sales by Membership Category)
+
+Business Problems:
+
+* _How many customers are there in each category? How much do the customers in each category the loyalty program have spent across years?_
+  - In total, there are 13315 customers in the Bronze category, 6220 in the Silver and 2178 in the Gold category. Overall, they spent $2,818,529, $1,320,416 and $448,975, respectively.
+
+* _What is the Average Transaction Value (ATV) for Gold, Silver, and Bronze tier customers?_
+    - The ATV for each category is $211.68 for Bronze, $212.29 for Silver and $206.14 for Gold customers.
+* _What percentage of total revenue comes from each loyalty category?_
+  - Considering all years together, Bronze members contributed to ~ 61.43& % of sales, followed by 28.78 silver and 9.79 of Gold members.
+
+ - The data indicates that the Membership program is not working properly, specially given that Gold members have an ATG lower than the other categories. The silver clients also do not have an ATV much greater than Bronze ones. This issue needs to be addressed;
+ - I generated the results of all these questions in a single SQL query, which resulted in the following table:
+
+<div align="center">
+| LOYALTY_CAT | N_CUSTOMERS | ALL_SALES   | ATV     | SALES % |
+|-------------|-------------|-------------|---------|---------|
+| Bronze      | 13,315      | $2,818,529  | $211.68 | 61.43   |
+| Silver      | 6,220       | $1,320,416  | $212.29 | 28.78   |
+| Gold        | 2,178       | $448,975    | $206.14 | 9.79    |
+ </div>  
+
+* Other insights:
+  - An analysis of the same KPIs could be done while grouping the data by Year in order to better understand if this overall pattern repeats itself and make predictos. Moreover, if the breakdown per year is, indeed, informative, it could inform when the Membership program succeeded annd when it stopped doing so.
+  - The breakdown of customers by their membership status could also benefit from observing other variables that influence customer behavior, such as demographic and profile characteristics. 
+
+-- Main KPIs Observed:
+
+* Overall Sales, Average Transaction Value and Sales % by Membership Category
+  - I first joined `fact_sales` with `dim_customers` by the `customer_id` key because I needed to obtain information about customer membership from `dim_customers`;
+  - I first calculated how many active customers were there with `COUNT(S.customer_id)` and the overall sales (`SUM(S.total_amount)`);
+  - I then grouped the data by `C.loyalty_status` using `GROUP BY` because I wanted to see the results per membership category
+  - After it, I calculated ATV by dividing total sales by the number of customers in the database (_note:_ this could also be achieved using `AVG`);
+  - I calculated the % each category contributed to overall sales by using a subquery which returns the total amount of sales while not grouping the data;
+  - Finally, I used ORDER BY to order the data in DESC way;
+  - I used formating when necessary just to improve visualization.
+ 
+    <div align="center">
+       <img width="900" height="450" 
+       src="https://drive.google.com/uc?id=1ZWfMzQ2DuIhe6ai_7_n71tvYHGKAh_Ff">
+    </div>
+
 Click <a href="https://github.com/Larissa-Cury/E-commerceProject/tree/8ac17a02d44452e4108c29fb308b85404a9ba64a/SQL%20Files/Create%20DB" target="_blank">here</a> to access the SQL code in Github
 
 <br><br>
